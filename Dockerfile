@@ -23,7 +23,7 @@ RUN adduser --system --uid 1001 nextjs
 
 RUN touch ./off \
   && chmod o+rw ./off \
-  && echo "nextjs-event-template: $COMMIT_SHA" >> /etc/nginx/commit.sha
+  && echo "nextjs-event-template: $COMMIT_SHA" >> ./commit.sha
 
 USER nextjs
 
