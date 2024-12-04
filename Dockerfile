@@ -21,6 +21,13 @@ ENV NEXT_SHARP_PATH "/app/node_modules/sharp"
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
+# copy the public folder from the project as this is not included in the build process
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+# copy the standalone folder inside the .next folder generated from the build process
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+# copy the static folder inside the .next folder generated from the build process
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
 RUN touch ./off \
   && chmod o+rw ./off \
   && echo "nextjs-event-template: $COMMIT_SHA" >> ./commit.sha
