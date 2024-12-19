@@ -7,11 +7,11 @@ const nextConfig = {
     emotion: true,
   },
   serverRuntimeConfig: {
-    CRUD_PATH: process.env.CRUD_PATH ? process.env.CRUD_PATH : 'REPLACE_SERVER_ENV_'
+    CRUD_PATH: process.env.CRUD_PATH ? process.env.CRUD_PATH : 'REPLACE_SERVER_ENV_CRUD_PATH'
   },
   publicRuntimeConfig: {
-    PUBLIC_FILES_PATH: process.env.PUBLIC_FILES_PATH ? process.env.PUBLIC_FILES_PATH : 'REPLACE_SERVER_ENV_',
-    WEBSITE_BASE_PATH: process.env.WEBSITE_BASE_PATH ? process.env.WEBSITE_BASE_PATH : 'REPLACE_SERVER_ENV_',
+    PUBLIC_FILES_PATH: process.env.PUBLIC_FILES_PATH ? process.env.PUBLIC_FILES_PATH : 'REPLACE_SERVER_ENV_PUBLIC_FILES_PATH',
+    WEBSITE_BASE_PATH: process.env.WEBSITE_BASE_PATH ? process.env.WEBSITE_BASE_PATH : 'REPLACE_SERVER_ENV_WEBSITE_BASE_PATH',
   },
   async headers() {
     return [
