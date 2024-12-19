@@ -2,7 +2,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { GalleryGalleryStyled } from '../styles/gallerySectionsStyles/galleyGalleryStyled';
 import theme from '../../lib/MUIutils/theme';
 import InfiniteScroll from 'react-infinite-scroll-component';
@@ -50,7 +49,7 @@ const LazyMasonryGallery = ({
       fetch(fileURL).then(function (t) {
         if (t.ok) {
           return t.blob().then((b) => {
-            var a = document.createElement('a')
+            const a = document.createElement('a')
             a.href = URL.createObjectURL(b)
             a.setAttribute('download', gallery[currentIndex].file.name)
             a.click()

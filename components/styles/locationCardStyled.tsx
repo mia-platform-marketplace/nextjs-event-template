@@ -2,11 +2,7 @@
 
 import { styled } from '@mui/system'
 
-
-interface LocationCardStyledProps { }
-
-
-export const LocationCardStyled = styled('div')<LocationCardStyledProps>(({ theme }) => ({
+export const LocationCardStyled = styled('div')(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     maxWidth: '580px',              

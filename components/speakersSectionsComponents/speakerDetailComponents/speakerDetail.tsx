@@ -80,8 +80,9 @@ export default function SpeakerDetail({ open, setOpen, speaker, coverPhoto }: { 
                     <div className='talk-details-section'>
                         <div style={{ color: theme.palette.primary['200'] }}><Typography variant='h2'>TALKS</Typography></div>
                         <div className='talks-list'>
-                            {speaker?.talks?.map((talk: any) =>
+                            {speaker?.talks?.map((talk: any, index: number) =>
                                 <Link
+                                    key={index}
                                     href={`/talks/${talk.link}`}
                                     underline="always"
                                     sx={{
@@ -121,7 +122,7 @@ export default function SpeakerDetail({ open, setOpen, speaker, coverPhoto }: { 
                     slotProps={{
                         backdrop: {
                             sx: {
-                                backgroundColor: theme.palette.grey[900],
+                                backgroundColor: 'rgba(11, 7, 26, 0.9)'
                             },
                         },
                     }}

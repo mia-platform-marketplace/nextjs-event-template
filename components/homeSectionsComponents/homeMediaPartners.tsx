@@ -8,19 +8,19 @@ import LogoCard from '../reusableComponents/logoCard';
 import { MediaPartnerHomePageType, PartnerType } from '../../lib/types';
 import theme from '../../lib/MUIutils/theme';
 
-const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+const { serverRuntimeConfig } = getConfig()
 
 
 const HomeMediaPartners = async ({ partnersHomePage = [] }: { partnersHomePage?: MediaPartnerHomePageType[] }) => {
 
-    var data: any
-    var partnersWithPosition: PartnerType[] = []
+    let data: any
+    let partnersWithPosition: PartnerType[] = []
     try {
         const mongoQuery = {
             _id: { $in: partnersHomePage.map(({ partnerId }) => partnerId) }
         }
 
-        let url = `${serverRuntimeConfig?.CRUD_PATH}/media-partners?_q=${JSON.stringify(mongoQuery)}&_l=200`
+        const url = `${serverRuntimeConfig?.CRUD_PATH}/media-partners?_q=${JSON.stringify(mongoQuery)}&_l=200`
 
         data = await fetch(url, {
             next: { revalidate: 60 },
@@ -57,8 +57,8 @@ const HomeMediaPartners = async ({ partnersHomePage = [] }: { partnersHomePage?:
             </div>
             <div className='media-partners-logos-container'>
                 <div className='media-partners-logos'>
-                    {sortArrayByPosition(partnersWithPosition).map(partner => {
-                        return <LogoCard partner={partner as PartnerType} />
+                    {sortArrayByPosition(partnersWithPosition).map((partner, index: number) => {
+                        return <LogoCard key={index} partner={partner as PartnerType} />
                     })}
                 </div>
             </div>

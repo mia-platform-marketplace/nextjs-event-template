@@ -1,6 +1,6 @@
 'use client';
 
-import { display, styled } from '@mui/system';
+import { styled } from '@mui/system';
 
 export const GalleryPopupModalStyles = styled('div')(({ theme }) => ({
     position: 'fixed',

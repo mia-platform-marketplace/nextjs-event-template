@@ -1,6 +1,5 @@
 import React from 'react'
 import { Typography } from '@mui/material';
-import TextHighlighted from '../reusableComponents/textHighlighted';
 import theme from '../../lib/MUIutils/theme';
 
 
@@ -17,7 +16,7 @@ const RegisterTextSection = ({ location }: { location: { eventCity: string, even
             <div style={{ color: theme.palette.grey[600] }}>
                 <Typography variant='bodyM'>
                     Lorem Ipsum is simply dummy text of the printing and typesettin
-                    g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    g industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
                 </Typography>
             </div>
         </>

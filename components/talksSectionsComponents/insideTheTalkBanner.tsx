@@ -1,9 +1,8 @@
 import React from 'react'
 import { InsideTheTalkBannerStyled } from '../styles/talksSectionsStyles/insideTheTalkBannerStyled';
-import { Divider, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import theme from '../../lib/MUIutils/theme';
 import { InsideTheTalkBannerType } from '../../lib/types';
-import NoBackgroundButton from '../../lib/MUIutils/noBackgroundButton';
 import AllSpeakersButton from './buttons/allSpeakersButton';
 import SocialMediaIconButton from '../../lib/MUIutils/socialMediaIconButton';
 

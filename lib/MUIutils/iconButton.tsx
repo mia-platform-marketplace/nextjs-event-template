@@ -1,5 +1,4 @@
-import { Button, PaletteColor } from "@mui/material";
-import Image from "next/image";
+import { Button } from "@mui/material";
 import theme from "./theme";
 
 const IconButton = (props: any) => (

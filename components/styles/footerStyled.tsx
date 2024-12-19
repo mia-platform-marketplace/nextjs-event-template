@@ -2,9 +2,7 @@
 
 import { styled } from '@mui/system'
 
-interface FooterStyledProps { }
-
-export const FooterStyled = styled('div')<FooterStyledProps>(({ theme }) => ({
+export const FooterStyled = styled('div')(({ theme }) => ({
     background: theme.palette.grey[900],
     color: '#FFFFFF',
     [theme.breakpoints.down('md')]: {

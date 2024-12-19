@@ -1,8 +1,6 @@
 'use client'
 
 import { Button, Typography } from "@mui/material";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
 import theme from "./theme";
 import { useState } from "react";
 import IconSvg from "../../components/reusableComponents/iconSvg";

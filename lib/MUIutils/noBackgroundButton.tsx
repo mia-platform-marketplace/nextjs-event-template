@@ -3,7 +3,6 @@
 import { Button } from "@mui/material";
 import theme from "./theme";
 import IconSvg from "../../components/reusableComponents/iconSvg";
-import { useState } from "react";
 
 const NoBackgroundButton = (props: any) => {
     return (

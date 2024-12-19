@@ -2,7 +2,6 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import NoBackgroundButton from '../../../lib/MUIutils/noBackgroundButton';
-import IconSvg from '../../reusableComponents/iconSvg';
 
 
 const HomeMediaPartnersButton = () => {

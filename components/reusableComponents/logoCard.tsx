@@ -1,9 +1,7 @@
 import React from 'react'
 import { LogoCardStyled } from '../styles/logoCardStyles';
 import getConfig from 'next/config';
-import Link from 'next/link';
-import { FileServiceFileType, PartnerType } from '../../lib/types';
-import { headers } from 'next/headers';
+import { PartnerType } from '../../lib/types';
 import Image from 'next/image';
 
 const { publicRuntimeConfig } = getConfig()

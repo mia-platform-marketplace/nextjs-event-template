@@ -1,5 +1,4 @@
 import React from 'react'
-import NumberReport from '../reusableComponents/numberReport'
 import { HomeNumberReportStyled } from '../styles/homeSectionsStyles/homeNumberReportStyled'
 import { Typography } from '@mui/material'
 import HomeNumberComponent from './homeNumberComponent'

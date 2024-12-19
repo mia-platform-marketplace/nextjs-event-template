@@ -2,7 +2,7 @@
 
 import { styled } from '@mui/system'
 
-export const HomeKeywordsStyled = styled('div')(({ theme }) => ({
+export const HomeKeywordsStyled = styled('div')(() => ({
     color: '#FFFFFF',
     display: 'flex',
     justifyContent: 'center',

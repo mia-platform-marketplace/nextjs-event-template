@@ -8,7 +8,7 @@ import HomeAboutReadMoreButton from './buttons/homeAboutReadMoreButton';
 import theme from '../../lib/MUIutils/theme';
 
 const HomeAbout = () => {
-    const [scrollProgress, setScrollProgress] = useState(0);
+    const [, setScrollProgress] = useState(0);
     const [visibleWordsPerLine, setVisibleWordsPerLine] = useState<number[]>([]);
     const descriptionRef = useRef<HTMLDivElement>(null);
 

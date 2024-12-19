@@ -78,8 +78,9 @@ export default function SpeakerDetailMobile({ open, setOpen, speaker, coverPhoto
                     <div className='talk-details-section'>
                         <div style={{ color: theme.palette.primary['200'] }}><Typography variant='h2'>TALKS</Typography></div>
                         <div className='talks-list'>
-                            {speaker?.talks?.map((talk: any) =>
+                            {speaker?.talks?.map((talk: any, index: number) =>
                                 <Link
+                                    key={index}
                                     href={`/talks/${talk.link}`}
                                     underline="always"
                                     sx={{

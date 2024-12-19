@@ -1,6 +1,6 @@
 'use client'
 
-import { maxWidth, styled, width } from '@mui/system'
+import { styled } from '@mui/system'
 
 export const AboutSustainabilityStyled = styled('div')(({ theme }) => ({
     background: theme.palette.grey[50],

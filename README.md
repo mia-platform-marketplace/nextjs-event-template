@@ -10,7 +10,7 @@
 - npm run start:stubby
 
 ### Start application
-- npm run use 20
+- nvm use 20
 - npm ci
 - npm run dev
 

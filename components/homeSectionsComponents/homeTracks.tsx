@@ -2,10 +2,8 @@ import React from 'react'
 import { Typography } from '@mui/material';
 import { HomeTracksStyled } from '../styles/homeSectionsStyles/homeTracksStyled';
 import TracksCard from '../reusableComponents/tracksCard';
-import TextHighlighted from '../reusableComponents/textHighlighted';
 import getConfig from 'next/config';
 import { TrackType } from '../../lib/types';
-import { headers } from 'next/headers';
 import Image from 'next/image';
 import theme from '../../lib/MUIutils/theme';
 

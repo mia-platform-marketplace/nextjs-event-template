@@ -31,7 +31,7 @@ const PopupGallery = ({
         slotProps={{
             backdrop: {
                 sx: {
-                    backgroundColor: theme.palette.grey[900],
+                    backgroundColor: 'rgba(11, 7, 26, 0.9)',
                 },
             },
         }}

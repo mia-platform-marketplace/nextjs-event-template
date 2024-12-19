@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import { SpeakerTalkType, SpeakerType, SpeakersTalksType, TalkTrackType, TalkType, TrackType } from '../../../lib/types';
+import { SpeakerTalkType, SpeakerType, SpeakersTalksType, TalkTrackType, TalkType } from '../../../lib/types';
 import { useMediaQuery } from '@mui/material';
 import SpeakerDetail from './speakerDetail';
 import SpeakerDetailMobile from './speakerDetailMobile';

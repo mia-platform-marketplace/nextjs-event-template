@@ -2,11 +2,7 @@
 
 import { styled } from '@mui/system'
 
-
-interface TracksCardStyledProps { }
-
-
-export const TracksCardStyled = styled('div')<TracksCardStyledProps>(({ theme }) => ({
+export const TracksCardStyled = styled('div')(() => ({
     '.tracks-content': {
         display: 'flex',
         flexDirection: 'column',

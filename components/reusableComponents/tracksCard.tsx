@@ -3,7 +3,6 @@ import React from 'react'
 import { TracksCardStyled } from '../styles/tracksCardStyled';
 import MultiLayerLayout from './multiLayerLayout';
 import { useMediaQuery } from '@mui/material';
-import { borderRadius } from '@mui/system';
 import { TrackCardType } from '../../lib/types';
 
 const TracksCard = ({ children, image, backgroundColor }: TrackCardType) => {

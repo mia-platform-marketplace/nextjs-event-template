@@ -1,6 +1,6 @@
 'use client'
 
-import { display, styled } from '@mui/system'
+import { styled } from '@mui/system'
 
 export const GalleryHeroStyled = styled('div')(({ theme }) => ({
     background: theme.palette.grey[50],

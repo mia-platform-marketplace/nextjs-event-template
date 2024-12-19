@@ -5,7 +5,6 @@ import { SponsorsTextSectionStyled } from '../styles/sponsorsStyles/sponsorsText
 import getConfig from 'next/config';
 import { sortArrayByPosition } from '../../lib/sortArrayByProp';
 import Image from 'next/image';
-import { headers } from 'next/headers';
 import theme from '../../lib/MUIutils/theme';
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -17,14 +16,14 @@ const SponsorsTextSection = async ({
     }
 }: { location: EventLocationType, config: SponsorsPageType }) => {
 
-    var dataSponsors: any
-    var sponsorsWithPosition: PartnerType[] = []
+    let dataSponsors: any
+    let sponsorsWithPosition: PartnerType[] = []
     try {
         const mongoQuery = {
             _id: { $in: config?.sponsors?.map(({ sponsorId }) => sponsorId) }
         }
 
-        let url = `${serverRuntimeConfig?.CRUD_PATH}/sponsors?_q=${JSON.stringify(mongoQuery)}&_l=200`
+        const url = `${serverRuntimeConfig?.CRUD_PATH}/sponsors?_q=${JSON.stringify(mongoQuery)}&_l=200`
 
         dataSponsors = await fetch(url, {
             next: { revalidate: 60 },
@@ -49,14 +48,14 @@ const SponsorsTextSection = async ({
         console.error("Error:", error);
     }
 
-    var dataPartners: any
-    var partnersWithPosition: PartnerType[] = []
+    let dataPartners: any
+    let partnersWithPosition: PartnerType[] = []
     try {
         const mongoQuery = {
             _id: { $in: config?.partners?.map(({ partnerId }) => partnerId) }
         }
 
-        let url = `${serverRuntimeConfig?.CRUD_PATH}/media-partners?_q=${JSON.stringify(mongoQuery)}&_l=200`
+        const url = `${serverRuntimeConfig?.CRUD_PATH}/media-partners?_q=${JSON.stringify(mongoQuery)}&_l=200`
 
         dataPartners = await fetch(url, {
             next: { revalidate: 60 },
@@ -97,8 +96,8 @@ const SponsorsTextSection = async ({
                 <div className='sponsors-logos-container'>
                     <div> <Typography variant='h2' sx={{ color: theme.palette.grey[600] }}>{config.sponsorsLabel}</Typography></div>
                     <div className='sponsors-logos'>
-                        {sortArrayByPosition(sponsorsWithPosition || []).map((sponsor, index) => {
-                            return <div className='logo'>
+                        {sortArrayByPosition(sponsorsWithPosition || []).map((sponsor, index: number) => {
+                            return <div className='logo' key={index}>
                                 <Image
                                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${sponsor?.logo?.file}`}
                                     alt={sponsor?.name}
@@ -114,8 +113,8 @@ const SponsorsTextSection = async ({
                 <div className='sponsors-logos-container'>
                     <div> <Typography variant='h2' sx={{ color: theme.palette.grey[600] }}>{config.partnersLabel}</Typography></div>
                     <div className='sponsors-logos'>
-                        {sortArrayByPosition(partnersWithPosition || []).map((partner, index) => {
-                            return <div className='logo'>
+                        {sortArrayByPosition(partnersWithPosition || []).map((partner, index: number) => {
+                            return <div className='logo' key={index}>
                                 <Image
                                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${partner?.logo?.file}`}
                                     alt={partner?.name}
