@@ -1,0 +1,40 @@
+[
+    {
+        "_id": "1",
+        "name": "",
+        "url": "https://example.com",
+        "logo": {
+            "file": "sponsor-logo-placeholder.png",
+            "size": 345048,
+            "location": "/files-service/download/sponsor-logo-placeholder.png"
+        }
+    },
+    {
+        "_id": "2",
+        "url": "https://example.com",
+        "logo": {
+            "file": "sponsor-logo-placeholder.png",
+            "size": 59216,
+            "location": "/files-service/download/sponsor-logo-placeholder.png"
+        }
+    },
+    {
+        "_id": "3",
+        "name": "",
+        "url": "https://example.com",
+        "logo": {
+            "file": "sponsor-logo-placeholder.png",
+            "size": 345048,
+            "location": "/files-service/download/sponsor-logo-placeholder.png"
+        }
+    },
+    {
+        "_id": "4",
+        "url": "https://example.com",
+        "logo": {
+            "file": "sponsor-logo-placeholder.png",
+            "size": 59216,
+            "location": "/files-service/download/sponsor-logo-placeholder.png"
+        }
+    }
+]

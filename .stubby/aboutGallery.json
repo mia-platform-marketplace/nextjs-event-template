@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "6720ccc02357bb9eb8ce4ce6",
+        "__STATE__": "PUBLIC",
+        "gallery": [
+            {
+                "position": 1,
+                "file": {
+                    "file": "vert-grey.png",
+                    "location": "/files-service/download/vert-grey.png"
+                }
+            },
+            {
+                "position": 2,
+                "file": {
+                    "file": "vert-grey.png",
+                    "location": "/files-service/download/vert-grey.png"
+                }
+            },
+            {
+                "position": 3,
+                "file": {
+                    "file": "vert-grey.png",
+                    "location": "/files-service/download/vert-grey.png"
+                }
+            },
+            {
+                "position": 4,
+                "file": {
+                    "file": "vert-grey.png",
+                    "location": "/files-service/download/vert-grey.png"
+                }
+            },
+            {
+                "position": 5,
+                "file": {
+                    "file": "vert-grey.png",
+                    "location": "/files-service/download/vert-grey.png"
+                }
+            },
+            {
+                "position": 6,
+                "file": {
+                    "file": "vert-grey.png",
+                    "location": "/files-service/download/vert-grey.png"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "67192b5042858ea85298049b",
+        "partnersLabel": "partner label",
+        "sponsorsLabel": "sponsor label",
+        "sponsorshipLabel": "sponsorship label",
+        "partners": [
+            {
+                "partnerId": "2",
+                "position": 2
+            },
+            {
+                "partnerId": "1",
+                "position": 1
+            },
+            {
+                "partnerId": "3",
+                "position": 3
+            },
+            {
+                "partnerId": "4",
+                "position": 4
+            }
+        ],
+        "sponsors": [
+            {
+                "sponsorId": "2",
+                "position": 2
+            },
+            {
+                "sponsorId": "1",
+                "position": 1
+            },
+            {
+                "sponsorId": "3",
+                "position": 3
+            },
+            {
+                "sponsorId": "4",
+                "position": 4
+            }
+        ]
+    }
+]

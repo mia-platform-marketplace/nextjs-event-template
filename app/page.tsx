@@ -1,95 +1,106 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HomeKeywords from '../components/homeSectionsComponents/homeKeywords'
+import StickyNavBar from '../components/reusableComponents/stickyNavBar'
+import HomeAbout from '../components/homeSectionsComponents/homeAbout'
+import HomeHero from '../components/homeSectionsComponents/homeHero'
+import HomeNumberReport from '../components/homeSectionsComponents/homeNumberReport'
+import HomeEmotionalVideo from '../components/homeSectionsComponents/homeEmotionalVideo'
+import HomeGallery from '../components/homeSectionsComponents/homeGallery'
+import HomeSpeakers from '../components/homeSectionsComponents/homeSpeakers'
+import HomeTracks from '../components/homeSectionsComponents/homeTracks'
+import HomeSponsors from '../components/homeSectionsComponents/homeSponsors'
+import HomeMediaPartners from '../components/homeSectionsComponents/homeMediaPartners'
+import Footer from '../components/reusableComponents/footer'
+import getConfig from 'next/config'
+import { HomePageType } from '../lib/types'
+import MultiLayerLayout from '../components/reusableComponents/multiLayerLayout'
+import theme from '../lib/MUIutils/theme'
+import DarkBanner from '../components/reusableComponents/darkBanner'
+import SponsorshipButton from '../components/reusableComponents/buttons/sponsorshipButton'
+import { Button } from '@mui/material'
+import IconSvg from '../components/reusableComponents/iconSvg'
+import LightBanner from '../components/reusableComponents/lightBanner'
 
-export default function Home() {
+const { serverRuntimeConfig } = getConfig()
+
+const Home = async () => {
+  var data: any
+  var config: HomePageType = {}
+
+  try {
+    data = await fetch(`${serverRuntimeConfig?.CRUD_PATH}/home-page`, { next: { revalidate: 60 } })
+    const response = await data.json()
+    config = response?.at(0)
+  } catch (error) {
+    console.error("Error:", error);
+  }
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <>
+      <StickyNavBar selectedKey='home' />
+      <h1 style={{ display: 'none' }}>PLACEHOLDER</h1>
+      <MultiLayerLayout
+        containerStyle={{
+          width: '100%',
+          height: '100%',
+          background: theme.palette.gradient[100]
+        }}
+        secondLayerDiv={
+          <></>
+        }
+      >
+        <div style={{ width: '100%' }}>
+          <div>
+            <HomeHero
+              eventCity={config?.eventCity}
+              eventLocation={config?.eventLocation}
+              eventDate={config?.eventDate}
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+            <HomeNumberReport
+              attendeesNumber={config?.attendeesNumber}
+              countriesNumber={config?.countriesNumber}
+              speakersNumber={config?.speakersNumber}
+              companiesNumber={config?.companiesNumber}
+            />
+            <HomeKeywords
+              keywords={config?.keywords}
+            />
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </MultiLayerLayout >
+      <HomeAbout />
+      <HomeEmotionalVideo
+        teaserVideoUrl={config?.teaserVideoUrl}
+        recapVideoUrl={config?.emotionalVideoUrl}
+      />
+      <HomeGallery
+        galleryImage={config?.galleryImage}
+      />
+      <HomeSpeakers
+        speakersHomePage={config?.speakers}
+      />
+      <HomeTracks
+        tracks={config?.tracks}
+      />
+      <HomeSponsors
+        sponsorsHomePage={config?.sponsors}
+      />
+      <HomeMediaPartners
+        partnersHomePage={config?.partners}
+      />
+      <LightBanner
+        supertitle='PLACEHOLDER'
+        title='Got insights to Share?'
+        description={<>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow'</>}
+        button={<Button variant='contained' color='primary' endIcon={<IconSvg name='arrow-up-right.svg' />}>Action</Button>}
+      />
+      <DarkBanner
+        title='Sponsorship'
+        description={<>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow'</>}
+        button={<SponsorshipButton />}
+      />
+      <Footer />
+    </>
+  )
 }
+
+export default Home

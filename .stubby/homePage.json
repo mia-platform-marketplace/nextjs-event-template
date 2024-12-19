@@ -1,0 +1,119 @@
+[
+    {
+        "_id": "67192b5042858ea85298049b",
+        "eventDate": "12th DECEMBER",
+        "eventCity": "Milano",
+        "eventLocation": "Placeholder location",
+        "attendeesNumber": 300,
+        "countriesNumber": 35,
+        "speakersNumber": 120,
+        "companiesNumber": 23,
+        "__STATE__": "PUBLIC",
+        "keywords": [
+            {
+                "name": "Keyword 1",
+                "position": 1
+            },
+            {
+                "name": "Keyword 2",
+                "position": 2
+            },
+            {
+                "name": "Keyword 3",
+                "position": 3
+            }
+        ],
+        "galleryImage": {
+            "_id": "6719491d2ffdf5835cd535a1",
+            "name": "Logo-Navbar_White.png",
+            "file": "image.png",
+            "size": 9857,
+            "location": "/files-service/download/image.png"
+        },
+        "partners": [
+            {
+                "partnerId": "2",
+                "position": 2
+            },
+            {
+                "partnerId": "1",
+                "position": 1
+            },
+            {
+                "partnerId": "3",
+                "position": 3
+            },
+            {
+                "partnerId": "4",
+                "position": 4
+            }
+        ],
+        "sponsors": [
+            {
+                "sponsorId": "2",
+                "position": 2
+            },
+            {
+                "sponsorId": "1",
+                "position": 1
+            },
+            {
+                "sponsorId": "3",
+                "position": 3
+            },
+            {
+                "sponsorId": "4",
+                "position": 4
+            }
+        ],
+        "speakers": [
+            {
+                "speakerId": "2",
+                "position": 1
+            },
+            {
+                "speakerId": "1",
+                "position": 2
+            }
+        ],
+        "emotionalVideoUrl": "https://example.com",
+        "tracks": [
+            {
+                "backgroundImage": {
+                    "_id": "672252d11fb22a43634716a2",
+                    "name": "tracksCard (7).png",
+                    "file": "tracks-card.png",
+                    "size": 166405,
+                    "location": "/files-service/download/tracks-card.png"
+                },
+                "backgroundColor": "red",
+                "title": "Placeholder",
+                "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "backgroundImage": {
+                    "_id": "672252d11fb22a43634716a2",
+                    "name": "tracksCard (7).png",
+                    "file": "tracks-card.png",
+                    "size": 166405,
+                    "location": "/files-service/download/tracks-card.png"
+                },
+                "backgroundColor": "green",
+                "title": "Placeholder",
+                "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "backgroundImage": {
+                    "_id": "672252d11fb22a43634716a2",
+                    "name": "tracksCard (7).png",
+                    "file": "tracks-card.png",
+                    "size": 166405,
+                    "location": "/files-service/download/tracks-card.png"
+                },
+                "backgroundColor": "blue",
+                "title": "Placeholder",
+                "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+        ]
+    }
+]
