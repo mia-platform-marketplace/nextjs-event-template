@@ -16,7 +16,7 @@ const Talks = async ({ params }: { params: { readablePathId: string } }) => {
     const talk = talks?.find((talkValues: TalkType) => readablePathId === talkValues?.readablePathId)
 
     if (!talk) {
-        redirect('/speakers')
+        redirect('/speakers-page')
     }
 
     const speakersQuery = {
