@@ -6,7 +6,7 @@
         "logo": {
             "file": "sponsor-logo-placeholder.png",
             "size": 345048,
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     },
     {
@@ -15,7 +15,7 @@
         "logo": {
             "file": "sponsor-logo-placeholder.png",
             "size": 59216,
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     },
     {
@@ -25,7 +25,7 @@
         "logo": {
             "file": "sponsor-logo-placeholder.png",
             "size": 345048,
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     },
     {
@@ -34,7 +34,7 @@
         "logo": {
             "file": "sponsor-logo-placeholder.png",
             "size": 59216,
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     }
 ]

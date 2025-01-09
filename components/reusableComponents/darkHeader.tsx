@@ -2,7 +2,6 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import { DarkHeaderStyled } from '../styles/darkHeaderStyled'
 import MultiLayerLayout from './multiLayerLayout'
-import Image from 'next/image'
 
 const DarkHeader = ({ supertitle, title, backgroundImageUrl }: { supertitle: string, title: any, backgroundImageUrl?: string }) => {
     return (
@@ -15,12 +14,9 @@ const DarkHeader = ({ supertitle, title, backgroundImageUrl }: { supertitle: str
                 secondLayerDiv={
                     <div style={{ width: '100%' }}>
                         {backgroundImageUrl &&
-                            <Image
+                            <img
                                 alt='sphere'
                                 src={backgroundImageUrl}
-                                sizes="100vw"
-                                height={0}
-                                width={0}
                                 className='image-sphere'
                             />}
                     </div>

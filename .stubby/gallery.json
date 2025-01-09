@@ -8,7 +8,7 @@
                 "file": {
                     "file": "horizontal.png",
                     "size": 71537,
-                    "location": "/files-service/download/horizontal.png"
+                    "location": "/files-download/download/horizontal.png"
                 }
             },
             {
@@ -16,7 +16,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -24,7 +24,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -32,7 +32,7 @@
                 "file": {
                     "file": "horizontal.png",
                     "size": 71537,
-                    "location": "/files-service/download/horizontal.png"
+                    "location": "/files-download/download/horizontal.png"
                 }
             },
             {
@@ -40,7 +40,7 @@
                 "file": {
                     "file": "horizontal.png",
                     "size": 71537,
-                    "location": "/files-service/download/horizontal.png"
+                    "location": "/files-download/download/horizontal.png"
                 }
             },
             {
@@ -48,7 +48,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -56,7 +56,7 @@
                 "file": {
                     "file": "horizontal.png",
                     "size": 71537,
-                    "location": "/files-service/download/horizontal.png"
+                    "location": "/files-download/download/horizontal.png"
                 }
             },
             {
@@ -64,7 +64,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -72,7 +72,7 @@
                 "file": {
                     "file": "horizontal.png",
                     "size": 71537,
-                    "location": "/files-service/download/horizontal.png"
+                    "location": "/files-download/download/horizontal.png"
                 }
             },
             {
@@ -80,7 +80,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -88,7 +88,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -96,7 +96,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             },
             {
@@ -104,7 +104,7 @@
                 "file": {
                     "file": "vertical.png",
                     "size": 71537,
-                    "location": "/files-service/download/vertical.png"
+                    "location": "/files-download/download/vertical.png"
                 }
             }
         ]

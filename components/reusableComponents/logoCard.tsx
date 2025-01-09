@@ -2,7 +2,6 @@ import React from 'react'
 import { LogoCardStyled } from '../styles/logoCardStyles';
 import getConfig from 'next/config';
 import { PartnerType } from '../../lib/types';
-import Image from 'next/image';
 
 const { publicRuntimeConfig } = getConfig()
 
@@ -19,7 +18,7 @@ const LogoCard = ({ partner }: { partner: PartnerType }) => {
                 alignItems: 'center',
                 justifyContent: 'center'
             }}>
-                <Image
+                <img
                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${partner?.logo?.file}`}
                     alt={partner?.name}
                     style={{
@@ -27,9 +26,6 @@ const LogoCard = ({ partner }: { partner: PartnerType }) => {
                         height: '44px',
                         padding: '8px'
                     }}
-                    sizes="100vw"
-                    height={0}
-                    width={0}
                 />
             </a>
         </LogoCardStyled>

@@ -28,7 +28,7 @@
             "name": "Logo-Navbar_White.png",
             "file": "image.png",
             "size": 9857,
-            "location": "/files-service/download/image.png"
+            "location": "/files-download/download/image.png"
         },
         "partners": [
             {
@@ -84,7 +84,7 @@
                     "name": "tracksCard (7).png",
                     "file": "tracks-card.png",
                     "size": 166405,
-                    "location": "/files-service/download/tracks-card.png"
+                    "location": "/files-download/download/tracks-card.png"
                 },
                 "backgroundColor": "red",
                 "title": "Placeholder",
@@ -96,7 +96,7 @@
                     "name": "tracksCard (7).png",
                     "file": "tracks-card.png",
                     "size": 166405,
-                    "location": "/files-service/download/tracks-card.png"
+                    "location": "/files-download/download/tracks-card.png"
                 },
                 "backgroundColor": "green",
                 "title": "Placeholder",
@@ -108,7 +108,7 @@
                     "name": "tracksCard (7).png",
                     "file": "tracks-card.png",
                     "size": 166405,
-                    "location": "/files-service/download/tracks-card.png"
+                    "location": "/files-download/download/tracks-card.png"
                 },
                 "backgroundColor": "blue",
                 "title": "Placeholder",

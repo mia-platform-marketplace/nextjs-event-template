@@ -4,7 +4,6 @@ import { HomeTracksStyled } from '../styles/homeSectionsStyles/homeTracksStyled'
 import TracksCard from '../reusableComponents/tracksCard';
 import getConfig from 'next/config';
 import { TrackType } from '../../lib/types';
-import Image from 'next/image';
 import theme from '../../lib/MUIutils/theme';
 
 const { publicRuntimeConfig } = getConfig()
@@ -23,13 +22,10 @@ const HomeTracks = ({ tracks = [] }: { tracks?: TrackType[] }) => {
                         return <TracksCard
                             key={index}
                             image={
-                                <Image
+                                <img
                                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${track?.backgroundImage?.file}`}
                                     alt='track'
                                     style={{ width: '100%', height: '100%' }}
-                                    sizes="100vw"
-                                    height={0}
-                                    width={0}
                                 />
                             }
                             backgroundColor={track?.backgroundColor}

@@ -4,7 +4,6 @@ import MenuDrawer from './menuDrawer';
 import StickyNavBarRegisterButton from './buttons/stickyNavBarRegisterButton';
 import StickyNavBarMenuButton from './buttons/stickyNavBarMenuButton';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const StickyNavBar = async ({ selectedKey }: { selectedKey: string }) => {
 
@@ -17,12 +16,9 @@ const StickyNavBar = async ({ selectedKey }: { selectedKey: string }) => {
                 }}
                 rel="preload"
             >
-                <Image
+                <img
                     src="/assets/images/logo-onLight.png"
                     alt="logo"
-                    sizes="100vw"
-                    height={42}
-                    width={230}
                     className='event-logo'
                     style={{
                         maxHeight: '50px',

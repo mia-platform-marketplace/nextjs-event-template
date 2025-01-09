@@ -6,7 +6,6 @@ import { SpeakerType } from '../../../lib/types';
 import { SpeakerDetailStyled } from '../../styles/speakersSectionsStyles/swipableDrawerComponents/speakerDetailStyled';
 import IconButton from '../../../lib/MUIutils/iconButton';
 import { Divider, Link, Typography } from '@mui/material';
-import Image from 'next/image';
 import theme from '../../../lib/MUIutils/theme';
 import SocialMediaIconButton from '../../../lib/MUIutils/socialMediaIconButton';
 import IconSvg from '../../reusableComponents/iconSvg';
@@ -35,12 +34,9 @@ export default function SpeakerDetail({ open, setOpen, speaker, coverPhoto }: { 
         >
             <div className='card-main-content-container'>
                 <div className='image-speaker'>
-                    <Image
+                    <img
                         src={coverPhoto}
                         alt="speaker image"
-                        sizes="100vw"
-                        height={0}
-                        width={0}
                         style={{ width: '100%', height: '100%' }}
                     />
                 </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import { Typography } from '@mui/material';
 import MultiLayerLayout from './multiLayerLayout';
 import { DarkBannerStyled } from '../styles/darkBannerStyled';
-import Image from 'next/image';
 
 
 const DarkBanner = ({ title, description, button }: { title: string, description: React.ReactNode, button: React.ReactNode }) => {
@@ -42,12 +41,9 @@ const DarkBanner = ({ title, description, button }: { title: string, description
                             height: '100%',
                             alignItems: 'end'
                         }}>
-                            <Image
+                            <img
                                 src={'/assets/images/balls-placeholder.png'}
                                 alt='sphere'
-                                sizes="100vw"
-                                height={0}
-                                width={0}
                                 className='image-balls'
                             />
                         </div>

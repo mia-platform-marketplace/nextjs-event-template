@@ -3,7 +3,6 @@ import Marquee from 'react-fast-marquee'
 import { AboutGalleryStyled } from '../styles/aboutSectionsStyles/aboutGalleryStyled'
 import { Typography } from '@mui/material'
 import { sortArrayByPosition } from '../../lib/sortArrayByProp';
-import Image from 'next/image'
 import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig()
@@ -34,9 +33,9 @@ const AboutGallery = ({
           {gallery && sortArrayByPosition(gallery).map(async (image: any, index: any) => {
             const fileURL = `${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${image?.file?.file}`
             if (image.position % 2 === 0) {
-              return <Image width={0} height={0} sizes='100wv' key={index} src={fileURL} alt={`image [${image.position}]`} className='image-up' />
+              return <img key={index} src={fileURL} alt={`image [${image.position}]`} className='image-up' />
             }
-            return <Image width={0} height={0} sizes='100wv' key={index} src={fileURL} alt={`image [${image.position}]`} className='image-down' />
+            return <img key={index} src={fileURL} alt={`image [${image.position}]`} className='image-down' />
           })}
         </Marquee>
       </AboutGalleryStyled>

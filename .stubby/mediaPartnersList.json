@@ -5,7 +5,7 @@
         "url": "https://example.com",
         "logo": {
             "file": "sponsor-logo-placeholder.png",
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     },
     {
@@ -13,7 +13,7 @@
         "url": "https://example.com",
         "logo": {
             "file": "sponsor-logo-placeholder.png",
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     },
     {
@@ -22,7 +22,7 @@
         "url": "https://example.com",
         "logo": {
             "file": "sponsor-logo-placeholder.png",
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     },
     {
@@ -31,7 +31,7 @@
         "logo": {
             "file": "sponsor-logo-placeholder.png",
             "size": 59216,
-            "location": "/files-service/download/sponsor-logo-placeholder.png"
+            "location": "/files-download/download/sponsor-logo-placeholder.png"
         }
     }
 ]

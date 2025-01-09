@@ -1,7 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 import { FooterStyled } from '../styles/footerStyled'
-import Image from 'next/image'
 import SocialMediaIconButton from '../../lib/MUIutils/socialMediaIconButton'
 import CookieSettingsButton from './buttons/cookieSettingsButton'
 
@@ -10,11 +9,8 @@ const Footer = () => {
         <FooterStyled>
             <div className='references'>
                 <div>
-                    <Image src="/assets/images/logo-onDark.svg"
+                    <img src="/assets/images/logo-onDark.svg"
                         alt="logo"
-                        sizes="100vw"
-                        height={0}
-                        width={0}
                         className='image-plarmosphere'
                         style={{
                             maxHeight: '50px',
@@ -25,12 +21,9 @@ const Footer = () => {
                 <div className='references-socials'>
                     <div className='logo'>
                         <Typography variant='bodyXSAlt'>AN EVENT BY</Typography>
-                        <Image
+                        <img
                             src='/assets/images/logo-mia-platform.png'
                             alt='logo mia platform'
-                            sizes="100vw"
-                            height={0}
-                            width={0}
                             style={{ width: 'auto', height: '45px' }}
                         />
                     </div>

@@ -8,7 +8,7 @@
     "biography": "Co founder",
     "photo": {
       "file": "speaker-placeholder.png",
-      "location": "/files-service/download/speaker-placeholder.png"
+      "location": "/files-download/download/speaker-placeholder.png"
     },
     "linkedinUrl": "linkedIn.com",
     "githubUrl": "github.com",
@@ -24,7 +24,7 @@
     "biography": "Bio Bio Bio",
     "photo": {
       "file": "speaker-placeholder.png",
-      "location": "/files-service/download/speaker-placeholder.png"
+      "location": "/files-download/download/speaker-placeholder.png"
     },
     "linkedinUrl": "linkedIn.com",
     "githubUrl": "github.com",

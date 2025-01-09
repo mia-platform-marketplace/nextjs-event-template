@@ -11,7 +11,6 @@ import { MenuDrawerStyled } from '../styles/menuDrawerStyled';
 import IconButton from '../../lib/MUIutils/iconButton';
 import TertiaryButton from '../../lib/MUIutils/tertiaryButton';
 import { Typography } from '@mui/material';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import IconSvg from './iconSvg';
 
@@ -73,12 +72,9 @@ export default function MenuDrawer() {
             </div>
             <div className='mia-platform-logo'>
                 <Typography variant='bodyXSAlt'>AN EVENT BY</Typography>
-                <Image
+                <img
                     src='/assets/images/logo-mia-platform.png'
                     alt='logo mia platform'
-                    sizes="100vw"
-                    height={0}
-                    width={0}
                     style={{ width: 'auto', height: '45px' }}
                 />
             </div>

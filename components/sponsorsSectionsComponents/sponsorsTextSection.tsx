@@ -4,7 +4,6 @@ import { EventLocationType, PartnerType, SponsorsPageType } from '../../lib/type
 import { SponsorsTextSectionStyled } from '../styles/sponsorsStyles/sponsorsTextSectionStyled';
 import getConfig from 'next/config';
 import { sortArrayByPosition } from '../../lib/sortArrayByProp';
-import Image from 'next/image';
 import theme from '../../lib/MUIutils/theme';
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -98,13 +97,10 @@ const SponsorsTextSection = async ({
                     <div className='sponsors-logos'>
                         {sortArrayByPosition(sponsorsWithPosition || []).map((sponsor, index: number) => {
                             return <div className='logo' key={index}>
-                                <Image
+                                <img
                                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${sponsor?.logo?.file}`}
                                     alt={sponsor?.name}
                                     style={{ width: 'auto', height: '70%' }}
-                                    sizes="100vw"
-                                    height={0}
-                                    width={0}
                                 />
                             </div>
                         })}
@@ -115,13 +111,10 @@ const SponsorsTextSection = async ({
                     <div className='sponsors-logos'>
                         {sortArrayByPosition(partnersWithPosition || []).map((partner, index: number) => {
                             return <div className='logo' key={index}>
-                                <Image
+                                <img
                                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${partner?.logo?.file}`}
                                     alt={partner?.name}
                                     style={{ width: 'auto', height: '70%' }}
-                                    sizes="100vw"
-                                    height={0}
-                                    width={0}
                                 />
                             </div>
                         })}

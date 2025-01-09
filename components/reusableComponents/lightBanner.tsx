@@ -1,7 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material';
 import MultiLayerLayout from './multiLayerLayout';
-import Image from 'next/image';
 import theme from '../../lib/MUIutils/theme';
 import { LightBannerStyled } from '../styles/lightBannerStyled';
 
@@ -36,12 +35,9 @@ const LightBanner = ({ supertitle = '', title = '', description = '', button }: 
                             }} />}
                     >
                         <div style={{ width: '100%' }}>
-                            <Image
+                            <img
                                 alt='sphere'
                                 src={'/assets/images/balls-placeholder.png'}
-                                sizes="100vw"
-                                height={0}
-                                width={0}
                                 className='image-balls'
                             />
                         </div>

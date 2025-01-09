@@ -1,7 +1,6 @@
 import React from 'react'
 import { HomeGalleryStyled } from '../styles/homeSectionsStyles/homeGalleryStyled';
 import { Typography } from '@mui/material';
-import Image from 'next/image';
 import getConfig from 'next/config';
 import HomeGalleryButton from './buttons/homeGalleryButton';
 import { FileServiceFileType } from '../../lib/types';
@@ -18,12 +17,9 @@ const HomeGallery = ({ galleryImage }: { galleryImage?: FileServiceFileType }) =
                 </div>
             </div>
             <div>
-                <Image
+                <img
                     src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${galleryImage?.file}`}
                     alt="Gallery 2024"
-                    sizes="100vw"
-                    height={0}
-                    width={0}
                     style={{ width: '100%', height: 'auto' }}
                 />
             </div>

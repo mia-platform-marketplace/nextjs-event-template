@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import { SpeakerType } from '../../../lib/types';
 import IconButton from '../../../lib/MUIutils/iconButton';
 import { Link, Typography } from '@mui/material';
-import Image from 'next/image';
 import theme from '../../../lib/MUIutils/theme';
 import SocialMediaIconButton from '../../../lib/MUIutils/socialMediaIconButton';
 import { SpeakerDetailMobileStyled } from '../../styles/speakersSectionsStyles/swipableDrawerComponents/speakerDetailMobileStyled';
@@ -39,12 +38,9 @@ export default function SpeakerDetailMobile({ open, setOpen, speaker, coverPhoto
                     <IconButton onClick={toggleDrawer(false)} icon={<IconSvg name='x-menu.svg' />} />
                 </div>
                 <div className='image-speaker'>
-                    <Image
+                    <img
                         src={coverPhoto}
                         alt="speaker image mobile"
-                        sizes="100vw"
-                        height={0}
-                        width={0}
                         style={{ width: '100%', height: '100%' }}
                     />
                 </div>

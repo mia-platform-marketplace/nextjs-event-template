@@ -2,7 +2,6 @@ import React from 'react'
 import { Typography } from '@mui/material';
 import TextHighlighted from '../reusableComponents/textHighlighted';
 import { HomeHeroStyled } from '../styles/homeSectionsStyles/homeHeroStyled';
-import Image from 'next/image';
 import HomeHeroRegisterButton from './buttons/homeHeroRegisterButton';
 
 
@@ -20,12 +19,9 @@ const HomeHero = (
     return (
         <HomeHeroStyled>
             <div className='hero-image'>
-                <Image
+                <img
                     src="/assets/images/logo-onDark.svg"
                     alt="logo"
-                    sizes="100vw"
-                    height={250}
-                    width={1178}
                     style={{ width: '100%', height: 'auto', maxWidth: '1176px' }}
                 />
             </div>
