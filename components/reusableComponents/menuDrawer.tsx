@@ -60,7 +60,7 @@ export default function MenuDrawer() {
                     </ListItem>
                     <Divider />
                     <ListItem key={'speakers'} disablePadding>
-                        <ListItemButton onClick={() => router.push('/speakers-page')} >
+                        <ListItemButton onClick={() => router.push('/speakers')} >
                             <ListItemText primary={<Typography variant='bodyXLMedium'>{'Speakers'}</Typography>} />
                         </ListItemButton>
                     </ListItem>

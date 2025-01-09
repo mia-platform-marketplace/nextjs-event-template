@@ -79,7 +79,7 @@ export default function SpeakerDetail({ open, setOpen, speaker, coverPhoto }: { 
                             {speaker?.talks?.map((talk: any, index: number) =>
                                 <Link
                                     key={index}
-                                    href={`/talks-info/${talk.link}`}
+                                    href={`/talks/${talk.link}`}
                                     underline="always"
                                     sx={{
                                         textDecoration: 'underline',

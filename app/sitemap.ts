@@ -25,7 +25,7 @@ export default async function sitemap() {
     }))
 
     talks?.forEach(talk => fields.push({
-        url: `${publicRuntimeConfig?.WEBSITE_BASE_PATH}/talks-info/${talk.readablePathId}`,
+        url: `${publicRuntimeConfig?.WEBSITE_BASE_PATH}/talks/${talk.readablePathId}`,
         lastModified: new Date(),
         changeFrequency: 'always'
     }))

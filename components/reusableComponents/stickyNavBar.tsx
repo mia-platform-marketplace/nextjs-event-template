@@ -28,7 +28,7 @@ const StickyNavBar = async ({ selectedKey }: { selectedKey: string }) => {
             </Link>
             <div className='desktop-navbar'>
                 <StickyNavBarMenuButton route={'/about'} selected={selectedKey === 'about'} text={'About'} />
-                <StickyNavBarMenuButton route={'/speakers-page'} selected={selectedKey === 'speakers'} text={'Speakers'} />
+                <StickyNavBarMenuButton route={'/speakers'} selected={selectedKey === 'speakers'} text={'Speakers'} />
             </div>
             <div className='desktop-navbar-button'>
                 <StickyNavBarRegisterButton />
