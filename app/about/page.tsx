@@ -11,7 +11,7 @@ import Header from '../../components/reusableComponents/header'
 
 const About = async () => {
 
-  var response = await fetchCrudCollection({ endpoint: 'about-page' })
+  let response = await fetchCrudCollection({ endpoint: 'about-page' })
   const gallery = response?.at(0)?.gallery
   response = await fetchCrudCollection({ endpoint: 'home-page', query: '_p=eventDate,eventCity,eventLocation' })
   const homepageConfig = response?.at(0)

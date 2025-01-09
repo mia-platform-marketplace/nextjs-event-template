@@ -1,18 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-
-const websiteBasePath = process.env.WEBSITE_BASE_PATH;
-
-// Parse the URL to extract the protocol and hostname
-let protocol, hostname;
-try {
-  const url = new URL(websiteBasePath);
-  protocol = url.protocol.replace(':', ''); // Remove trailing colon
-  hostname = url.hostname;
-} catch (error) {
-  console.error("Invalid URL in WEBSITE_BASE_PATH:", websiteBasePath, error);
-}
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -49,10 +36,6 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'localhost'
-      },
-      {
-        protocol: protocol,
-        hostname: hostname
       },
     ],
     minimumCacheTTL: 2629800

@@ -8,7 +8,7 @@ import getConfig from "next/config"
 const { publicRuntimeConfig } = getConfig()
 
 const Gallery = async () => {
-  var response = await fetchCrudCollection({ endpoint: 'gallery-page' })
+  const response = await fetchCrudCollection({ endpoint: 'gallery-page' })
   const gallery = response?.at(0)?.gallery
 
   return (

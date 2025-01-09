@@ -23,8 +23,8 @@ import LightBanner from '../components/reusableComponents/lightBanner'
 const { serverRuntimeConfig } = getConfig()
 
 const Home = async () => {
-  var data: any
-  var config: HomePageType = {}
+  let data: any
+  let config: HomePageType = {}
 
   try {
     data = await fetch(`${serverRuntimeConfig?.CRUD_PATH}/home-page`, { next: { revalidate: 60 } })
@@ -90,12 +90,12 @@ const Home = async () => {
       <LightBanner
         supertitle='PLACEHOLDER'
         title='Got insights to Share?'
-        description={<>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow'</>}
+        description={<>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow</>}
         button={<Button variant='contained' color='primary' endIcon={<IconSvg name='arrow-up-right.svg' />}>Action</Button>}
       />
       <DarkBanner
         title='Sponsorship'
-        description={<>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow'</>}
+        description={<>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknow</>}
         button={<SponsorshipButton />}
       />
       <Footer />

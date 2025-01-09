@@ -7,7 +7,7 @@ import DarkHeader from '../../components/reusableComponents/darkHeader';
 import theme from '../../lib/MUIutils/theme';
 
 const BecomeASponsor = async () => {
-    var response = await fetchCrudCollection({ endpoint: 'home-page', query: '_p=eventDate,eventCity,eventLocation' })
+    let response = await fetchCrudCollection({ endpoint: 'home-page', query: '_p=eventDate,eventCity,eventLocation' })
     const location = response?.at(0)
 
     response = await fetchCrudCollection({ endpoint: 'sponsors-page' })

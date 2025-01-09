@@ -1,4 +1,3 @@
-import { headers } from "next/headers";
 import LayoutWrapper from "../components/reusableComponents/layoutWrapper"
 import ThemeAppProvider from "../lib/MUIutils/themeAppProvider"
 
