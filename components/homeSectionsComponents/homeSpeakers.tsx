@@ -58,7 +58,7 @@ const HomeSpeakers = async ({ speakersHomePage = [] }: { speakersHomePage?: Spea
                                 darkMode
                                 key={index}
                                 speaker={speaker as SpeakerType}
-                                coverPhoto={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${speaker?.photo?.file}`}
+                                coverPhoto={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}${speaker?.photo?.file}`}
                             />
                         })
                     }

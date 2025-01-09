@@ -31,7 +31,7 @@ const AboutGallery = ({
         </div>
         <Marquee>
           {gallery && sortArrayByPosition(gallery).map(async (image: any, index: any) => {
-            const fileURL = `${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${image?.file?.file}`
+            const fileURL = `${publicRuntimeConfig?.PUBLIC_FILES_PATH}${image?.file?.file}`
             if (image.position % 2 === 0) {
               return <img key={index} src={fileURL} alt={`image [${image.position}]`} className='image-up' />
             }

@@ -23,7 +23,7 @@ const HomeTracks = ({ tracks = [] }: { tracks?: TrackType[] }) => {
                             key={index}
                             image={
                                 <img
-                                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${track?.backgroundImage?.file}`}
+                                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}${track?.backgroundImage?.file}`}
                                     alt='track'
                                     style={{ width: '100%', height: '100%' }}
                                 />

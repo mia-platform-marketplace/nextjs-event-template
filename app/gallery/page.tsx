@@ -19,7 +19,7 @@ const Gallery = async () => {
         supertitle='placeholder'
         backgroundImageUrl='/assets/images/balls-placeholder.png'
       />
-      <LazyMasonryGallery gallery={gallery} downloadPath={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/`} />
+      <LazyMasonryGallery gallery={gallery} downloadPath={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}`} />
       <Footer />
     </div>
 

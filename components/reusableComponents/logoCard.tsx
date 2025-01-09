@@ -19,7 +19,7 @@ const LogoCard = ({ partner }: { partner: PartnerType }) => {
                 justifyContent: 'center'
             }}>
                 <img
-                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${partner?.logo?.file}`}
+                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}${partner?.logo?.file}`}
                     alt={partner?.name}
                     style={{
                         width: 'auto',

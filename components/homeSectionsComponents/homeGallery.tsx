@@ -18,7 +18,7 @@ const HomeGallery = ({ galleryImage }: { galleryImage?: FileServiceFileType }) =
             </div>
             <div>
                 <img
-                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${galleryImage?.file}`}
+                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}${galleryImage?.file}`}
                     alt="Gallery 2024"
                     style={{ width: '100%', height: 'auto' }}
                 />

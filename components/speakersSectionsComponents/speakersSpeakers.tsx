@@ -23,7 +23,7 @@ const SpeakersSpeakers = ({
             <div className='speakers-grid-container'>
                 <div className='speakers-grid'>
                     {speakers && sortArrayByPosition(speakers, 'priority').map(async (speaker: any, index: any) => {
-                        const cover = `${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${speaker.photo.file}`
+                        const cover = `${publicRuntimeConfig?.PUBLIC_FILES_PATH}${speaker.photo.file}`
                         return <SpeakerDetailWrapper key={index} speaker={speaker} talks={talks} tracks={tracks} coverPhoto={cover}>
                             <SpeakerCard darkMode={false} speaker={speaker} coverPhoto={cover} layout='horizontal' />
                         </SpeakerDetailWrapper>

@@ -98,7 +98,7 @@ const SponsorsTextSection = async ({
                         {sortArrayByPosition(sponsorsWithPosition || []).map((sponsor, index: number) => {
                             return <div className='logo' key={index}>
                                 <img
-                                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${sponsor?.logo?.file}`}
+                                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}${sponsor?.logo?.file}`}
                                     alt={sponsor?.name}
                                     style={{ width: 'auto', height: '70%' }}
                                 />
@@ -112,7 +112,7 @@ const SponsorsTextSection = async ({
                         {sortArrayByPosition(partnersWithPosition || []).map((partner, index: number) => {
                             return <div className='logo' key={index}>
                                 <img
-                                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}/download/${partner?.logo?.file}`}
+                                    src={`${publicRuntimeConfig?.PUBLIC_FILES_PATH}${partner?.logo?.file}`}
                                     alt={partner?.name}
                                     style={{ width: 'auto', height: '70%' }}
                                 />
