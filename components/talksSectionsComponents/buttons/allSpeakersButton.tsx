@@ -14,7 +14,7 @@ const AllSpeakersButton = () => {
             icon={'arrow-left.svg'}
             height={20}
             width={20}
-            onClick={() => router.push('/speakers')}
+            onClick={() => router.push('/speakers-page')}
         >
             <Typography variant='bodyXSSemibold'>ALL SPEAKERS</Typography>
         </NoBackgroundButton>

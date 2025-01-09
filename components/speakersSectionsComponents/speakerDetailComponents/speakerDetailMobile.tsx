@@ -77,7 +77,7 @@ export default function SpeakerDetailMobile({ open, setOpen, speaker, coverPhoto
                             {speaker?.talks?.map((talk: any, index: number) =>
                                 <Link
                                     key={index}
-                                    href={`/talks/${talk.link}`}
+                                    href={`/talks-page/${talk.link}`}
                                     underline="always"
                                     sx={{
                                         textDecoration: 'underline',
