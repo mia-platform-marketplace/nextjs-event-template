@@ -1,7 +1,7 @@
 import StickyNavBar from '../../components/reusableComponents/stickyNavBar'
 import Footer from '../../components/reusableComponents/footer';
 import SpeakersSpeakers from '../../components/speakersSectionsComponents/speakersSpeakers';
-import { fetchCrudCollection } from '../../api/crud';
+import { fetchCrudCollection } from '../../lib/crud';
 import Header from '../../components/reusableComponents/header';
 import DarkBanner from '../../components/reusableComponents/darkBanner';
 import SponsorshipButton from '../../components/reusableComponents/buttons/sponsorshipButton';

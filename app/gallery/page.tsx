@@ -1,4 +1,4 @@
-import { fetchCrudCollection } from "../../api/crud"
+import { fetchCrudCollection } from "../../lib/crud"
 import Footer from "../../components/reusableComponents/footer"
 import StickyNavBar from "../../components/reusableComponents/stickyNavBar"
 import LazyMasonryGallery from "../../components/galleryComponents/lazyMasonryGallery"
@@ -13,7 +13,7 @@ const Gallery = async () => {
 
   return (
     <div style={{ background: '#064e3b' }}>
-      <StickyNavBar selectedKey={""} />
+      <StickyNavBar selectedKey='gallery' />
       <Header
         title='Placeholder'
         supertitle='placeholder'

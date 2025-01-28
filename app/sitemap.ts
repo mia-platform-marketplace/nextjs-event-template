@@ -1,5 +1,5 @@
 import { TalkType } from '../lib/types';
-import { fetchCrudCollection } from '../api/crud';
+import { fetchCrudCollection } from '../lib/crud';
 import getConfig from 'next/config';
 
 

@@ -3,7 +3,7 @@ import Footer from '../../components/reusableComponents/footer'
 import DarkHeader from '../../components/reusableComponents/darkHeader';
 import { RegisterStyled } from '../../components/styles/registerStyles/registerStyled';
 import RegisterTextSection from '../../components/registerSectionsComponents/registerTextSection';
-import { fetchCrudCollection } from '../../api/crud';
+import { fetchCrudCollection } from '../../lib/crud';
 import theme from '../../lib/MUIutils/theme';
 
 const Register = async () => {

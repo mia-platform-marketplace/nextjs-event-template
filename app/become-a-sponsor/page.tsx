@@ -2,7 +2,7 @@ import StickyNavBar from '../../components/reusableComponents/stickyNavBar'
 import Footer from '../../components/reusableComponents/footer'
 import { SponsorsStyled } from '../../components/styles/sponsorsStyled';
 import SponsorsTextSection from '../../components/sponsorsSectionsComponents/sponsorsTextSection';
-import { fetchCrudCollection } from '../../api/crud';
+import { fetchCrudCollection } from '../../lib/crud';
 import DarkHeader from '../../components/reusableComponents/darkHeader';
 import theme from '../../lib/MUIutils/theme';
 

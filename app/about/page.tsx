@@ -1,6 +1,6 @@
 import StickyNavBar from '../../components/reusableComponents/stickyNavBar'
 import Footer from '../../components/reusableComponents/footer'
-import { fetchCrudCollection } from '../../api/crud'
+import { fetchCrudCollection } from '../../lib/crud'
 import SimpleBanner from '../../components/reusableComponents/simpleBanner'
 import AboutImpact from '../../components/aboutSectionsComponents/aboutImpact'
 import AboutSustainability from '../../components/aboutSectionsComponents/aboutSustainability'

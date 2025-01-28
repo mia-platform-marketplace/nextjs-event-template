@@ -1,4 +1,4 @@
-import { fetchCrudCollection } from "../../../api/crud"
+import { fetchCrudCollection } from "../../../lib/crud"
 import StickyNavBar from "../../../components/reusableComponents/stickyNavBar"
 import { SpeakerType, SpeakersTalksType, TalkTrackType, TalkType } from "../../../lib/types"
 import InsideTheTalkBanner from "../../../components/talksSectionsComponents/insideTheTalkBanner"

@@ -1,6 +1,6 @@
 [
     {
-        "_id": "67192b5042858ea85298049b",
+        "_id": "4",
         "eventDate": "12th DECEMBER",
         "eventCity": "Milano",
         "eventLocation": "Placeholder location",
@@ -24,7 +24,7 @@
             }
         ],
         "galleryImage": {
-            "_id": "6719491d2ffdf5835cd535a1",
+            "_id": "1",
             "name": "Logo-Navbar_White.png",
             "file": "image.png",
             "size": 9857,
@@ -80,7 +80,7 @@
         "tracks": [
             {
                 "backgroundImage": {
-                    "_id": "672252d11fb22a43634716a2",
+                    "_id": "1",
                     "name": "tracksCard (7).png",
                     "file": "tracks-card.png",
                     "size": 166405,
@@ -92,7 +92,7 @@
             },
             {
                 "backgroundImage": {
-                    "_id": "672252d11fb22a43634716a2",
+                    "_id": "2",
                     "name": "tracksCard (7).png",
                     "file": "tracks-card.png",
                     "size": 166405,
@@ -104,7 +104,7 @@
             },
             {
                 "backgroundImage": {
-                    "_id": "672252d11fb22a43634716a2",
+                    "_id": "3",
                     "name": "tracksCard (7).png",
                     "file": "tracks-card.png",
                     "size": 166405,

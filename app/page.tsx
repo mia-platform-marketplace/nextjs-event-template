@@ -33,7 +33,7 @@ const Home = async () => {
   } catch (error) {
     console.error("Error:", error);
   }
-
+  
   return (
     <>
       <StickyNavBar selectedKey='home' />
