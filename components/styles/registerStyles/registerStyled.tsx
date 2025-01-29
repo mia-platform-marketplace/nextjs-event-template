@@ -31,7 +31,7 @@ export const RegisterStyled = styled('div')(({ theme }) => ({
 
     '.register-content-container': {
         display: 'flex',
-        background: theme.palette.grey[50],
+        background: theme.palette.grey?.at(50),
         padding: '0px 0px 100px 0px',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column'
