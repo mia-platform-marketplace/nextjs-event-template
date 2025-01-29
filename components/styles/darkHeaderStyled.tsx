@@ -3,13 +3,13 @@
 import { styled } from '@mui/system'
 
 export const DarkHeaderStyled = styled('div')(({ theme }) => ({
-    background: theme.palette.gradient?.at(100),
+    background: theme.palette.gradient ? theme.palette.gradient[100] : undefined,
     '.title-header': {
         color: '#FFFFFF',
     },
     '.supertitle-header': {
         minHeight: '330px',
-        color: theme.palette.primary?.at('100'),
+        color: theme.palette.primary ? theme.palette.primary[100] : undefined,
         display: 'flex',
         flexDirection: 'column',
         gap: '16px',

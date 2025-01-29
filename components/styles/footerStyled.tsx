@@ -3,7 +3,7 @@
 import { styled } from '@mui/system'
 
 export const FooterStyled = styled('div')(({ theme }) => ({
-    background: theme.palette.grey?.at(900),
+    background: theme.palette.grey ? theme.palette.grey[900] : undefined,
     color: '#FFFFFF',
     [theme.breakpoints.down('md')]: {
         padding: '50px 16px 0px 16px',
@@ -31,7 +31,7 @@ export const FooterStyled = styled('div')(({ theme }) => ({
     '.logo': {
         display: 'flex',
         gap: '8px',
-        color: theme.palette.primary?.at(200),
+        color: theme.palette.primary ? theme.palette.primary[200] : undefined,
         alignItems: 'end'
     },
 
@@ -50,7 +50,7 @@ export const FooterStyled = styled('div')(({ theme }) => ({
         gap: '10%',
         justifyContent: 'space-between',
         padding: '52px 156px',
-        borderTop: `1px solid ${theme.palette.primary?.at(950)}`,
+        borderTop: `1px solid ${theme.palette.primary ? theme.palette.primary[950] : undefined}`,
         [theme.breakpoints.down('md')]: {
             borderTop: 'none',
             flexDirection: 'column',
@@ -69,7 +69,7 @@ export const FooterStyled = styled('div')(({ theme }) => ({
     },
 
     '.copyright': {
-        color: theme.palette.primary?.at(200),
+        color: theme.palette.primary ? theme.palette.primary[200] : undefined,
         [theme.breakpoints.down('md')]: {
             padding: '0px 0px 25px 0px'
         },
