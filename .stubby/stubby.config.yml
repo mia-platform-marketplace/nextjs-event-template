@@ -1,0 +1,142 @@
+- request:
+    method: GET
+    url: /about-page
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: aboutGallery.json
+- request:
+    method: GET
+    url: /home-page?_p=eventDate,eventCity,eventLocation
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    body: >
+      [
+        {
+          "eventDate": "25th MAY",
+          "eventCity": "Milano",
+          "eventLocation": "Villa Fiorita"
+        }
+      ]
+
+- request:
+    method: GET
+    url: /speakers
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: speakersList.json
+
+
+- request:
+    method: GET
+    url: /speakers
+  query:
+      _q: .*
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: speakersList.json
+
+
+- request:
+    method: GET
+    url: /gallery
+  query:
+      _q: .*
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: gallery.json
+
+
+- request:
+    method: GET
+    url: /talks
+  query:
+      _q: .*
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: talks.json
+
+- request:
+    method: GET
+    url: /talk-tracks
+  query:
+      _q: .*
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: talkTracks.json
+
+- request:
+    method: GET
+    url: /home-page
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: homePage.json
+
+- request:
+    method: GET
+    url: /sponsors-page
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: sponsorsPage.json
+
+- request:
+    method: GET
+    url: /sponsors
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: sponsorsList.json
+
+
+- request:
+    method: GET
+    url: /media-partners
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: mediaPartnersList.json
+
+- request:
+    method: GET
+    url: /home-page?_p=eventDate,eventCity,eventLocation
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    body: >
+      [
+        {
+          "eventDate": "25th MAY",
+          "eventCity": "Milano",
+          "eventLocation": "Villa Fiorita"
+        }
+      ]
+
+# Images
+- request:
+    url: /files/download/(.*)
+    method: GET
+  response:
+    headers:
+      content-type: image/png
+      access-control-allow-origin: "*"
+    file: images/<% url[1] %>

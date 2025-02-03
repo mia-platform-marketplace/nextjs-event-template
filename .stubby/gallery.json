@@ -1,0 +1,112 @@
+[
+    {
+        "_id": "3",
+        "__STATE__": "PUBLIC",
+        "gallery": [
+            {
+                "orientation": "horizontal",
+                "file": {
+                    "file": "horizontal.png",
+                    "size": 71537,
+                    "location": "/files-download/download/horizontal.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "horizontal",
+                "file": {
+                    "file": "horizontal.png",
+                    "size": 71537,
+                    "location": "/files-download/download/horizontal.png"
+                }
+            },
+            {
+                "orientation": "horizontal",
+                "file": {
+                    "file": "horizontal.png",
+                    "size": 71537,
+                    "location": "/files-download/download/horizontal.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "horizontal",
+                "file": {
+                    "file": "horizontal.png",
+                    "size": 71537,
+                    "location": "/files-download/download/horizontal.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "horizontal",
+                "file": {
+                    "file": "horizontal.png",
+                    "size": 71537,
+                    "location": "/files-download/download/horizontal.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            },
+            {
+                "orientation": "vertical",
+                "file": {
+                    "file": "vertical.png",
+                    "size": 71537,
+                    "location": "/files-download/download/vertical.png"
+                }
+            }
+        ]
+    }
+]
